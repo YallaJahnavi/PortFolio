@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="nav-header">
+            <h1>Portfolio</h1>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#academic" class="nav-link">Academic Details</a></li>
+            <li><a href="#internships" class="nav-link">Internships</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section id="home" class="section">
+            <div class="section-content fade-in home-container">
+                <div class="home-text">
+                    <h1>I'm Jahnavi</h1>
+                    <p>Java Full Stack Developer</p>
+                </div>
+                <div class="home-image">
+                    <img src="images/my pic.jpg" alt="Your Photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-content fade-in">
+                <h2>About Me</h2>
+                <p>
+                    I am a highly motivated and adaptable fresher with a strong passion for 
+                    learning and innovation. With a solid foundation in software development, 
+                    I possess skills in problem-solving, teamwork and effective communication. 
+                    I am eager to apply my knowledge, grow professionally, and contribute to a 
+                    dynamic organization. My enthusiasm, dedication, and ability to adapt make 
+                    me a valuable addition to any team.
+                </p>
+            </div>
+        </section>
+
+        <section id="academic" class="section">
+            <div class="section-content fade-in">
+                <h2>Academic Details</h2>
+                <div class="academic-container">
+                    <div class="academic-box" data-delay="0">
+                        <h3>📌 10th</h3>
+                        <p>D.A.V Public School</p>
+                        <p> (2018 - 2019) </p>
+                        <p><strong>9.3 Points</strong></p>
+                    </div>
+                    <div class="academic-box" data-delay="500">
+                        <h3>📌 Intermediate</h3>
+                        <p>Sri Chaitanya Junior College</p>
+                        <p> (2019 - 2021) </p>
+                        <p><strong>957 Marks</strong></p>
+                    </div>
+                    <div class="academic-box" data-delay="1000">
+                        <h3>📌 B.Tech</h3>
+                        <p>Dadi Institute of Engineering and Technology</p>
+                        <p> (2021 - 2025) </p>
+                        <p><strong>8.38 CGPA</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="internships" class="section">
+            <div class="section-content fade-in">
+                <h2>Internships</h2>
+                <div class="internship-container">
+                    <div class="internship-box" data-delay="0">
+                        <h3>📌 AWS - AI/ML Virtual Internship</h3>
+                        <p>Worked on designing and deploying ML models, training datasets, 
+                            and AI solutions.</p>
+                    </div>
+                    <div class="internship-box" data-delay="500">
+                        <h3>📌 Data Valley - Full Stack Development</h3>
+                        <p>Hands-on experience with React, Angular, Node.js, MongoDB & MySQL.</p>
+                    </div>
+                    <div class="internship-box" data-delay="1000">
+                        <h3>📌 AWS - Embedded Systems Developer</h3>
+                        <p>Designed and tested embedded software for microcontrollers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content fade-in">
+                <h2>Projects</h2>
+                <div class="project-box">
+                    <h3>🌱 Plant Recognition System using Deep Learning</h3>
+                    <p>
+                        The complete project is based on Deep Learning Domain. Now a days people 
+                        are far away to the Plant eco-system, in order to improve the communication 
+                        between plant species and mankind this helps us out.Just by uploading an 
+                        image through a simple interface everyone can gain the plant knowledge from 
+                        every where at any time. It gives us the scientific name, characteristics 
+                        and various details about the uploaded plant species.
+                    </p>
+                </div>
+                <div class="project-image"> 
+                    <img src="images/user-interface.jpg" alt="Your Photo">
+                    <img src="images/image-uploading stage.jpg" alt="...">
+                    <img src="images/output stage.jpg" alt="...">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="skills-content fade-in">
+                <h2 style="text-align: center">Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-box" data-delay="0">💻 Java Full Stack Development</div>
+                    <div class="skills-box" data-delay="500">🎨 HTML </div>
+                    <div class="skills-box" data-delay="1000">🎨 CSS </div>
+                    <div class="skills-box" data-delay="1500">🎨 Boot Strap </div>
+                    <div class="skills-box" data-delay="2000">📝 Effective Communication </div>
+                    <div class="skills-box" data-delay="2000">✍ Content Writing </div>
+                    <div class="skills-box" data-delay="2500">📝 MS Word Documentation </div>
+                    <div class="skills-box" data-delay="3000">📝 Press Note Writing </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content fade-in">
+                <h2>Contact Me</h2>
+                <form class="contact-form" onsubmit="sendEmail(event)">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:yallajahnavi170@gmail.com">yallajahnavi170@gmail.com</a></p>
+                    <p>📞 Phone: <a href="tel:+919346764989">+91 9346764989</a></p>
+                    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/yallajahnavi">Yalla Jahnavi</a></p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
